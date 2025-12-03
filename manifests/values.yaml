@@ -1,0 +1,10 @@
+namespace: smartops-api
+
+image:
+  imageRepository: docker.io/phengbunath/modern_uid-65e6e813
+  tag: 1
+
+service:
+  type: ClusterIP
+  port: 5173
+  targetPort: 5173
