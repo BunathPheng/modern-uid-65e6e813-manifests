@@ -1,0 +1,25 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modern-uid-65e6e813
+  labels:
+    app: modern-uid-65e6e813
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: modern-uid-65e6e813
+  template:
+    metadata:
+      labels:
+        app: modern-uid-65e6e813
+    spec:
+      containers:
+        - name: modern-uid-65e6e813
+          image: docker.io/phengbunath/modern_uid-65e6e813:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5173
